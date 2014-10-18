@@ -1,4 +1,4 @@
-// blakesum command calculates BLAKE-224, -256, -384, -512 checksums of files.
+// blakesum command calculates BLAKE-224, -256 checksums of files.
 package main
 
 import (
