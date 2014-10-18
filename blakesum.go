@@ -8,7 +8,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/dchest/blake256"
+	"github.com/BlueDragon747/blake256"
 	"github.com/dchest/blake512"
 )
 
