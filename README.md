@@ -1,7 +1,7 @@
 BLAKESUM
 ========
 
-Utility to calculate BLAKE-224, -256, -384, -512 checksums.
+Utility to calculate BLAKE-224, -256 checksums.
 
 
 Installation
@@ -15,10 +15,10 @@ From source, if you have Go installed:
 Usage
 -----
 
-	blakesum [-a=224|256|384|512] [filename1] [filename2] ...
+	blakesum [-a=224|256] [filename1] [filename2] ...
 
 By default calculates BLAKE-256 sum. Pass option "-a=xxx" before filenames to
-calculate BLAKE-xxx, where xxx is 224, 256, 384, or 512.  If no filenames
+calculate BLAKE-xxx, where xxx is 224 or 256.  If no filenames
 specified, reads from stdin.
 
 
@@ -26,12 +26,12 @@ Examples
 --------
 
 	$ echo -n "Hello world" | blakesum
-	7ad560fefa2d287892478dccc5c724694fe21a2f8b004486cc87f76c40618575
+	08d6da79df4e9def59c0470f44ed659cef9921a7ad4bc73ff5b18182ae623470
 
 	$ echo -n "Hello world" | blakesum -a=224
-	fde00425968221a451c6f06f008bddc44cfdb9d8190507d0fd063707
+	3b7d637c22057241c3143b2698c390a6c395d97d1a0f0dd914ba468a
 
 	$ blakesum /bin/sh /etc/bashrc
-	BLAKE-256 (/bin/sh) = b162509ca9f0920d41cec68cb0a2d4037b8d0a89463d888f8e971be085da6786
-	BLAKE-256 (/etc/bashrc) = 1cf1a48d8c7bbd8410f270208bb60276b063fcf23608f6c3198b26391cff4e1e
+	BLAKE-256 (/bin/sh) = 942a4171ba7ff05161f3f5c05008dd78b10a66c3fa98b098a2e6a3ffd3f25c24
+	BLAKE-256 (/etc/bashrc) = 3e3260064cd430eef4d7b41fb9c65c1e843600e49a0ec6e0560253f6c45d091b
 
