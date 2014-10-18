@@ -1,7 +1,7 @@
 BLAKESUM
 ========
 
-Utility to calculate BLAKE-224, -256 checksums.
+Utility to calculate BLAKE-224 or BLAKE-256 checksums.
 
 
 Installation
