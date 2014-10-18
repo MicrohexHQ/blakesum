@@ -9,17 +9,14 @@ import (
 	"os"
 
 	"github.com/BlueDragon747/blake256"
-	"github.com/dchest/blake512"
 )
 
 var algorithms = map[int]func() hash.Hash{
 	224: blake256.New224,
 	256: blake256.New,
-	384: blake512.New384,
-	512: blake512.New,
 }
 
-var algoFlag = flag.Int("a", 256, "algorithm: 224, 256, 384, 512")
+var algoFlag = flag.Int("a", 256, "algorithm: 224, 256")
 
 func calcSum(f *os.File, h hash.Hash) (sum []byte, err error) {
 	h.Reset()
