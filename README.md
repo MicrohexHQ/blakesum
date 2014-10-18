@@ -9,7 +9,7 @@ Installation
 
 From source, if you have Go installed:
 
-	$ go get github.com/dchest/blakesum
+	$ go get github.com/BlueDragon747/blakesum
 
 
 Usage
