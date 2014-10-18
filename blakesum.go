@@ -7,7 +7,6 @@ import (
 	"hash"
 	"io"
 	"os"
-
 	"github.com/BlueDragon747/blake256"
 )
 
