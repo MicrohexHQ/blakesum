@@ -7,8 +7,7 @@ import (
 	"hash"
 	"io"
 	"os"
-	"github.com/BlueDragon747/blake256"
-)
+	"github.com/MicrohexHQ/blake256"
 
 var algorithms = map[int]func() hash.Hash{
 	224: blake256.New224,
